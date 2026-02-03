@@ -11,7 +11,8 @@ brew tap michaelklishin/tap
 ## Formulas
 
  * [`frm`](https://github.com/michaelklishin/frm/): a RabbitMQ version manager
- * [`fshc`](https://github.com/rabbitmq/fshc/): a tiny open source cross-paltform alternative to `handle.exe`
+ * [`fshc`](https://github.com/rabbitmq/fshc/): a tiny open source cross-platform alternative to `handle.exe`
+ * [`rabbitmqadmin`](https://github.com/rabbitmq/rabbitmqadmin/): modern RabbitMQ CLI based on the HTTP API
 
 ## License
 
