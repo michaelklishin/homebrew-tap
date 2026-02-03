@@ -29,7 +29,7 @@ class Frm < Formula
   on_macos do
     on_arm do
       url "https://github.com/michaelklishin/frm/releases/download/v0.17.0/frm-0.17.0-aarch64-apple-darwin.tar.gz"
-      sha256 "36a1c83af68e1b1080c890c90931cfa6aef03336d1ca79909df9ded6dda95971"
+      sha256 "11049ded4c452548cebc31ac81a86636d0f74bc70e34486691c2813549ad6f47"
     end
   end
 
