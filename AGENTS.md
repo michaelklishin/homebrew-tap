@@ -11,7 +11,7 @@ This is a personal Homebrew tap repository.
 ### Formula Code Style 
  
  * Use `brew style` to format the formulas
- * Each formula file should include an MIT license header
+ * Each formula file should include an MIT license header (the software packaged is dual-licensed under Apache-2.0 and MIT)
 
 ## Verifying Formulas
 
