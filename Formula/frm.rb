@@ -23,24 +23,23 @@
 class Frm < Formula
   desc "RabbitMQ version manager based on generic binary builds"
   homepage "https://github.com/michaelklishin/frm"
-  version "0.17.0"
+  version "0.19.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/michaelklishin/frm/releases/download/v0.17.0/frm-0.17.0-aarch64-apple-darwin.tar.gz"
-      sha256 "11049ded4c452548cebc31ac81a86636d0f74bc70e34486691c2813549ad6f47"
+      url "https://github.com/michaelklishin/frm/releases/download/v0.19.0/frm-0.19.0-aarch64-apple-darwin.tar.gz"
+      sha256 "938cc30a2c22937baa465b849f38851f588950cc3ec8ac88a201ab33ea2f7380"
     end
   end
 
   on_linux do
-    on_arm do
-      url "https://github.com/michaelklishin/frm/releases/download/v0.17.0/frm-0.17.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "c5ce752f13d57dd052cc7a7a22e1aeea1b1fd8eb828cee77bc2dd7bcd71c2be6"
-    end
-    on_intel do
-      url "https://github.com/michaelklishin/frm/releases/download/v0.17.0/frm-0.17.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "ec12d9635de741ca98ea595a1a3a7599511e8d62030d8871303f855526276f80"
+    if Hardware::CPU.arm?
+      url "https://github.com/michaelklishin/frm/releases/download/v0.19.0/frm-0.19.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "d58971fd07503631278886c575367cf80d445a27f2b0c09fd0a76014eeee7656"
+    else
+      url "https://github.com/michaelklishin/frm/releases/download/v0.19.0/frm-0.19.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "2933695ea9daee9adabd4ef6a57ec82e5f74acc27bb9bac30f2ce538ed4f9b7c"
     end
   end
 
@@ -49,6 +48,6 @@ class Frm < Formula
   end
 
   test do
-    system "#{bin}/frm", "help"
+    system "#{bin}/frm", "--version"
   end
 end
