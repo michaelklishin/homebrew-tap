@@ -23,7 +23,6 @@
 class Frm < Formula
   desc "RabbitMQ version manager based on generic binary builds"
   homepage "https://github.com/michaelklishin/frm"
-  version "0.20.0"
   license "MIT"
 
   on_macos do

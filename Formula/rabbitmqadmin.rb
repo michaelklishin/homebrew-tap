@@ -23,7 +23,6 @@
 class Rabbitmqadmin < Formula
   desc "Modern RabbitMQ CLI based on the HTTP API"
   homepage "https://www.rabbitmq.com/docs/management-cli"
-  version "2.32.0"
   license any_of: ["Apache-2.0", "MIT"]
 
   on_macos do

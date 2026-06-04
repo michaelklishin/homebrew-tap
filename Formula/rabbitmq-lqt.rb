@@ -23,7 +23,6 @@
 class RabbitmqLqt < Formula
   desc "CLI tool for parsing, annotating, and querying RabbitMQ log files"
   homepage "https://github.com/michaelklishin/rabbitmq-lqt"
-  version "0.22.0"
   license any_of: ["Apache-2.0", "MIT"]
 
   on_macos do

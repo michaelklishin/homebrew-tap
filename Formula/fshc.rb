@@ -23,7 +23,6 @@
 class Fshc < Formula
   desc "File and socket handle counter, a modern alternative to handle.exe"
   homepage "https://github.com/rabbitmq/fshc"
-  version "1.5.0"
   license any_of: ["Apache-2.0", "MIT"]
 
   on_macos do
